@@ -49,3 +49,9 @@ nav > ul {
     white-space: nowrap;
     border: 0;
 }
+
+/* the p has question numbers in them with only numbers in it
+we can add a ::before pseudo element to avoid repition */
+p::before {
+    content: 'Question # ';
+}
