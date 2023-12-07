@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f6f7;
+    color: #1b1b32;
+}
+#logo {
+    /* minimum width of 100px. And as the viewport grows,
+    the image will grow accordingly to be 18 percent
+    of the viewport width. */
+    width: max(100px, 18vw);
+    background-color: #0a0a23;
+    aspect-ratio: 35/4;
+    padding: 0.4rem;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #1b1b32;
+}
+h1 {
+    color: #f1be32;
+    font-size: min(5vw, 1.2em);
+}
+/* to get the direct children we can use > combinator */
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+}
